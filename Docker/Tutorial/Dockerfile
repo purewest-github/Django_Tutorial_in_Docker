@@ -1,5 +1,5 @@
 # Pythonのイメージを指定
-FROM python:3.10.8-buster
+FROM python:3.10.7-buster
 
 # PYTHONDONTWRITEBYTECODEとPYTHONUNBUFFEREDはオプション
 # pycファイル(および__pycache__)の生成を行わないようにする
@@ -15,4 +15,4 @@ COPY requirements.txt /code/
 RUN pip install -U pip && \
     pip install -r requirements.txt
 # ソースコードをコンテナにコピー
-COPY Django_App/ /code/
+COPY Tutorial_App/ /code/

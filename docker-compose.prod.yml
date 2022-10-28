@@ -19,9 +19,9 @@ services:
     container_name: app
     build:
       context: .
-      dockerfile: Docker/Django/Dockerfile
+      dockerfile: Docker/Tutorial/Dockerfile
     volumes:
-      - ./Django_App:/code
+      - ./Tutorial_App:/code
       - ./static:/static
     # 8000番ポートをNginx側が接続できるよう開く
     expose:

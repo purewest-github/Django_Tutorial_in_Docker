@@ -33,12 +33,12 @@ services:
     build:
       # ビルドコンテキストはカレントディレクトリ
       context: .
-      dockerfile: Docker/Django/Dockerfile
+      dockerfile: Docker/Tutorial/Dockerfile
     # ボリュームを指定
     # ローカルのカレントディレクトリをコンテナの/codeにマウントする
     # ローカルの/staticをコンテナの/staticにマウントする
     volumes:
-      - ./Django_App:/code
+      - ./Tutorial_App:/code
       - ./static:/static
     # ローカルの8000番ポートとコンテナの8000番ポートをつなぐ
     ports:
